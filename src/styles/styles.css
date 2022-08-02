@@ -1,0 +1,89 @@
+.logo {
+    height: 50px;
+
+}
+
+.credentials{
+    font-size: 1.5rem;
+    margin-top:25px;
+}
+
+.mainHeader{
+    background-color: #38384C;
+    height: 150px;
+    
+}
+
+.arti{
+   padding-top: 40px !important;
+   color: #ffffff;
+   font-size: 3rem;
+}
+
+.marketingPlan{
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 20px;
+    background-color: #38384C;
+}
+
+.titlePost{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+.mainHeader {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.navbar {
+    margin-bottom: 50px;
+    padding: 160px;
+    padding-left: 200px;
+
+}
+
+.increaseMargin{
+    margin-bottom: 50px;
+}
+
+.news {
+    width: 100%;
+    margin-top: -50px;
+}
+.navbar-expand-lg .navbar-nav {
+    margin: 0 auto;
+    margin-right: 150px !important;
+    font-weight: bold;
+}
+.me-auto {
+    /*margin-right: 0 !important;
+    margin-left: auto !important;*/
+}
+.row {
+    text-align: center;
+    padding: 15px;
+}
+.workplace {
+    max-width: 100%;
+    width: 650px;
+    padding: 3px;
+    border-radius: 20px;
+    /*border: 1px solid rgb(219, 217, 217);
+    border-radius: 20px;
+    background-color: #38384C;*/
+
+}
+.containContent {}
+
+.footer {
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    background-color: #38384C;
+    ;
+    height: 250px;
+}
