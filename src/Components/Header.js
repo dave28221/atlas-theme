@@ -2,10 +2,12 @@ import React from 'react';
 import logo from "../Images/logo.png";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link, Route, Routes } from 'react-router-dom';
+import Locations from "../Pages/Locations";
 
 
-const Header = () => {
+
+function header() {
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -13,16 +15,16 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Services</Nav.Link>
-            <Nav.Link href="#">Gallery</Nav.Link>
-            <Nav.Link href="#">Resources</Nav.Link>
-            <Nav.Link href="#">About Us</Nav.Link>
+            <Link to="/locations">Locations</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+
+      <Routes>
+        <Route path="/locations" element={<Locations />} />
+      </Routes>
     </div>
   );
 }
 
-export default Header
+export default header;

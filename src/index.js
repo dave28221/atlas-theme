@@ -10,21 +10,27 @@ const { render } = wp.element;    // new apollo graphql shit
 import Post from "./Components/Post";
 import client from "./apollo/client";
 import Title from "./Components/Title";
+import {BrowserRouter} from "react-router-dom";
 
 
 
 function App() {
+
     return (
+        <BrowserRouter>
         <div>
             <ApolloProvider client={client}>
                 <div>
                     <Header />
+                  
                     <Title />
-                    <Post/>
+                    <Post />
                     <Foot />
                 </div>
             </ApolloProvider>
         </div>
+        </BrowserRouter>
+
     );
 }
 
